@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.resource.ExtentReporterNG">
+
+        </listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/GemoApiAssecssment">
+        <classes>
+            <class name="org.example.ValidateResponse">
+
+            </class>
+            <class name="org.example.GetRequest">
+                <methods>
+                    <include name="getApiRequest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
